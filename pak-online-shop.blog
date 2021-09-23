@@ -1,0 +1,98 @@
+
+1
+<?xml version="1.0" encoding="UTF-8" ?>
+2
+<!DOCTYPE html>
+3
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:class='data:blog.languageDirection' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+4
+  <head>
+5
+    <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+6
+    <title><data:view.title.escaped/></title>
+7
+    <b:include data='blog' name='all-head-content'/>
+8
+<b:if cond='data:view.isHomepage'>
+9
+ <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:view.title.escaped/>&quot;,&quot;url&quot;:&quot;<data:view.url.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:view.url.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
+10
+    </b:if>
+11
+    <!-- Google Fonts -->
+12
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400i,700,700i' media='all' rel='stylesheet' type='text/css'/>
+13
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+14
+  
+15
+<!-- Template Style CSS -->
+16
+<b:skin version='1.0.0'><![CDATA[/* 
+17
+-----------------------------------------------
+18
+Blogger Template Style
+19
+Name:        SoraShop
+20
+License:     Free Version
+21
+Version:     3.0.0
+22
+Author:      Sora Templates
+23
+Author Url:  https://www.soratemplates.com/
+24
+----------------------------------------------- */
+25
+​
+26
+/*
+27
+<!-- Variable definitions -->
+28
+<Variable name="keycolor" description="Main Color" type="color" default="$(main.color)" value="#2874f0"/>
+29
+<Variable name="followByEmail" description="Follow By Email Text" type="string" default="Get all latest content delivered straight to your inbox." value="Get all latest content delivered straight to your inbox."/>
+30
+​
+31
+<Group description="Theme Colors" selector="body">
+32
+ <Variable name="main.color" description="Main Theme Color" type="color" default="#2874f0" value="#2874f0"/>
+33
+  <Variable name="main.dark.color" description="Dark Color" type="color" default="#111111" value="#111111"/>
+34
+  <Variable name="header.bg" description="Header Background" type="color" default="#2874f0" value="#2874f0"/>
+35
+  <Variable name="header.color" description="Header Color" type="color" default="#ffffff" value="#ffffff"/>
+36
+  <Variable name="menu.bg" description="Menu Background" type="color" default="#172337" value="#172337"/>
+37
+  <Variable name="menu.color" description="Menu Color" type="color" default="#ffffff" value="#ffffff"/>
+38
+  <Variable name="title.color" description="Title Color" type="color" default="#111111" value="#111111"/>
+39
+  <Variable name="title.hover" description="Title Color on Hover" type="color" default="$(main.color)" value="#2874f0"/>
+40
+  <Variable name="footer.color" description="Footer Color" type="color" default="#f1ffff" value="#f1ffff"/>
+41
+</Group>
+42
+​
+43
+<Group description="Theme Body" selector="body">
+44
+  <Variable name="body.background.color" description="Body Background Color" type="color" default="#f8f8f8"  value="#f8f8f8"/>
+45
+  <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) url() repeat fixed top left" value="$(color) url() repeat fixed top left"/>
+46
+  <Variable name="body.text.color" description="Text Color" type="color" default="#656565"  value="#656565"/>
+47
+  <Variable name="body.link.color" description="Link Color" type="color" default="$(main.color)"  value="#2874f0"/>
+48
+</Group>
+Template: Edit Template
